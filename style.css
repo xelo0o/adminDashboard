@@ -167,7 +167,7 @@ textarea:focus, input:focus{
 }
 
 .sidebar ul li{
-  padding:10px 20px;
+  padding:20px 20px;
 }
 
 .sidebar ul li a:hover{
@@ -177,7 +177,7 @@ textarea:focus, input:focus{
 .content-container{
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap:20px;
+  gap:30px;
   padding:20px 35px 40px 25px;
 
 }
@@ -236,8 +236,7 @@ textarea:focus, input:focus{
 
 .announcement-container{
   display: grid;
-  grid-template-rows: 40px repeat(2, 1fr);
-  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px 1fr;
   gap: 20px;
   
 }
@@ -255,12 +254,11 @@ textarea:focus, input:focus{
   padding:20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .announcement-title{
   font-size: 2rem;
-  padding: 20px 0 0 0;
 }
 
 .announcement-section-tile{
@@ -269,5 +267,42 @@ textarea:focus, input:focus{
 
 .announcement-section-tile p{
   color:#7a7a7a;
-  margin: 3px 0 15px 0;
+  margin: 3px 0px;
+}
+
+.announcement hr{
+  color:#7a7a7a;
+  
+}
+
+/*------------------------------------------*/
+
+.trending-section{
+  background-color: #fff;
+  border-radius: 10px;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trending-account{
+  display: flex;
+  align-items: center;
+  gap:20px;
+  font-size: 2rem;
+  color:#7a7a7a;
+  padding: 20px 10px;
+}
+
+.account-at{
+  color:#000;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.img-attribution{
+  text-align: center;
+  color:#58a7ec;
+  text-decoration: none;
 }
