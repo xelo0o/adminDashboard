@@ -6,26 +6,189 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleRework.css">
     <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <script src="script.js" defer></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
+
+
+    <div class="header">
+        <div class="search">
+            <span class="iconify" data-icon="mdi-magnify"></span>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="account">
+            <span class="iconify account-icon" data-icon="mdi-bell-ring-outline"></span>
+           <img src="img/catYarn" alt="Profile picture" class="profile-picture">
+            <p>Morgan Oakley</p>
+        </div>
+        <div class="header-profile">
+            <!--profile image goes here-->
+            <div>
+                <p>Hi there,</p>
+                <p class="header-profile-name"></pclass>Morgan Oakley (@morgan)</p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="sidebar">
+        <a href="index.html"><h1 class="sidebar-header"><span class="iconify dashboard-icon" data-icon="mdi-view-dashboard"></span>Dashboard</h1></a>
+
+        <ul>
+            <li><a href="#"><span class="iconify" data-icon="mdi-home"></span>Home</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-card-account-details-outline"></span>Profile</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-message"></span>Messages</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-clock-time-three"></span>History</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-file-multiple"></span>Tasks</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-account-group"></span>Communities</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#"><span class="iconify" data-icon="mdi-cog"></span>Settings</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-help-box"></span>Support</a></li>
+            <li><a href="#"><span class="iconify" data-icon="mdi-shield-check"></span>Privacy</a></li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <div class="article-section">
+            <p class="article-section-header">Your Projects</p>
+                            
+            <div class="article">
+                <div>
+                    <h3 class="article-title">Super Cool Projects</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium.</p>
+                </div>
+                <div class="article-links">
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-star-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-eye-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-source-fork"></span></a></ul>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                    <h3 class="article-title">Less Cool Projects</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium.</p>
+                </div>
+                <div class="article-links">
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-star-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-eye-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-source-fork"></span></a></ul>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                    <h3 class="article-title">Impossible App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium.</p>
+                </div>
+                <div class="article-links">
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-star-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-eye-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-source-fork"></span></a></ul>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                    <h3 class="article-title">Easy Peasy App</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium.</p>
+                </div>
+                <div class="article-links">
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-star-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-eye-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-source-fork"></span></a></ul>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                    <h3 class="article-title">Ad Blocker</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium.</p>
+                </div>
+                <div class="article-links">
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-star-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-eye-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-source-fork"></span></a></ul>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                    <h3 class="article-title">Money Maker</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium. Placeat numquam pariatur eveniet porro. Facere consequatur odit id error accusantium.</p>
+                </div>
+                <div class="article-links">
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-star-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-eye-plus-outline"></span></a></ul>
+                    <ul><a href="#"><span class="iconify" data-icon="mdi-source-fork"></span></a></ul>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<div class="header">
                 <div class="search">
                     <span class="iconify" data-icon="mdi-magnify"></span>
                     <input type="text" class="search-bar">
                 </div>
                 <div class="account">
                     <span class="iconify account-icon" data-icon="mdi-bell-ring-outline"></span>
-                    <img src="img/catYarn" alt="Profile picture" class="profile-picture">
+                   <img src="img/catYarn" alt="Profile picture" class="profile-picture">
                     <p>Morgan Oakley</p>
                 </div>
             
                 <div class="account-two">
-                    <img src="img/catYarn" alt="Profile picture" class="profile-picture">
+                    <img src="img/catYarn" alt="Profile picture" class="profile-picture"> 
                     <div class="account-info">
                         <p>Hi there,</p>
                         <p class="account-name">Morgan Oakley (@morgan)</p>
@@ -40,6 +203,7 @@
                     </ul>
                 </div>
         </div>
+
         <div class="sidebar">
             <h1><span class="iconify dashboard-icon" data-icon="mdi-view-dashboard"></span>Dashboard</h1>
 
@@ -58,6 +222,9 @@
                 <li><a href="#"><span class="iconify" data-icon="mdi-shield-check"></span>Privacy</a></li>
             </ul>
         </div>
+
+
+        
         <div class="content-container">
             <div class="article-section">
                 <p class="article-section-header">Your Projects</p>
@@ -130,7 +297,7 @@
                 </div>
             </div>
 
-            <!--           ANNOUCEMENT SECTION                                                 -->
+
 
             
             <div class="announcement-container">
@@ -156,7 +323,7 @@
                 <div class="trending-section">
                     
                     <div class="trending-account">
-                        <img src="img/dog.jpg" alt="Profile picture" class="profile-picture">
+                        <img src="img/dog.jpg" alt="Profile picture" class="profile-picture"> 
                         <div>
                             <p class="account-at">@morgan</p>
                             <p>Super Cool Project</p>
@@ -164,7 +331,7 @@
                     </div>
 
                     <div class="trending-account">
-                        <img src="img/catYarn" alt="Profile picture" class="profile-picture">
+                     <img src="img/catYarn" alt="Profile picture" class="profile-picture">
                         <div>
                             <p class="account-at">@morgan</p>
                             <p>Super Cool Project</p>
@@ -172,7 +339,7 @@
                     </div>
 
                     <div class="trending-account">
-                        <img src="img/spaceship.jpg" alt="Profile picture" class="profile-picture">
+                       <img src="img/spaceship.jpg" alt="Profile picture" class="profile-picture">
                         <div>
                             <p class="account-at">@morgan</p>
                             <p>Super Cool Project</p>
@@ -180,7 +347,7 @@
                     </div>
 
                     <div class="trending-account">
-                        <img src="img/cat.jpg" alt="Profile picture" class="profile-picture">
+                        <img src="img/cat.jpg" alt="Profile picture" class="profile-picture"> 
                         <div>
                             <p class="account-at">@morgan</p>
                             <p>Super Cool Project</p>
@@ -194,7 +361,6 @@
 
 
             </div>
-        
-    </div>
-</body>
-</html>
+
+
+-->
