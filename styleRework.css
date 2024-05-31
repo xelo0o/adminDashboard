@@ -78,18 +78,87 @@ body {
   padding: 20px 50px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2,min-content)
+  grid-template-rows: repeat(2,min-content);
+  gap:15px;
+  box-shadow: 0px 5px 10px #9c9c9c;
 }
 
+.search{
+  display: flex;
+  align-items: center;
+}
+
+.search-button{
+  background-color: white;
+  outline: none;
+}
+
+.search-bar{
+  background-color: #ececec;
+  border-radius: 20px;
+  size: 1.5rem;
+  border: none;
+  width: 75%;
+}
+
+.search input{
+  padding: 5px 20px;
+  height:35px;
+  font-size: 20px;
+  color:#4b4b4b;
+}
+
+textarea:focus, input:focus,{
+  outline: none;
+}
 
 .account{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: center;
+  gap:40px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .profile-picture{
-  height:50px;
-  width:50px;
+  height:60px;
+  width:60px;
   border-radius: 50%;
   
+}
+
+.header-profile{
+  display: flex;
+  gap:15px;
+  align-items: center;
+  font-weight:bold;
+}
+
+.header-profile-name{
+  font-size: 2rem;
+}
+
+.header-buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-buttons ul{
+  display:flex;
+  list-style: none;
+  gap:20px;
+}
+
+.header-buttons ul a{
+  text-decoration: none;
+  color:#fff;
+  background-color: #078de7;
+  padding:10px 30px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+}
+
+.header-buttons ul a:hover{
+  background-color: #0063a0;
 }
