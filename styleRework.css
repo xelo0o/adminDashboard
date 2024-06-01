@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -54,6 +54,7 @@ body {
 
 .sidebar ul{
   list-style: none;
+  margin-left:10px;
 }
 
 .sidebar ul li{
@@ -191,7 +192,7 @@ textarea:focus, input:focus{
 .articles-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: minmax(220px,1fr);
+  grid-auto-rows: minmax(220px,1fr);
   gap:20px;
 }
 
